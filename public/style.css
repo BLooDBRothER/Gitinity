@@ -1,5 +1,37 @@
-*, *::after, *::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  height: 200px;
+  padding: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.header__container--title {
+  display: flex;
 }
