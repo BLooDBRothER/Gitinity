@@ -53,8 +53,8 @@ a {
   border-radius: .8rem .8rem 0 0;
   background-color:var(--terminal-bg);
   color:var(--secondary-color);
-  font-size: 1.3rem;
-  height: 400px;
+  font-size: 1.35rem;
+  padding-bottom:5rem;
 }
 
 .terminal-header {
@@ -62,7 +62,8 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 0.7rem 1.2rem;
-  border-bottom: 1px solid #5C4747;
+  border-bottom: 3px solid #5C4747;
+  font-size:1rem;
 }
 
 .terminal-header p {
@@ -82,7 +83,28 @@ a {
   fill:var(--secondary-color);
 }
 .terminal-main{
-  padding:1.2rem;
+  padding:0 1.5rem;
 }
 
+.terminal-commands{
+  margin:1rem 0;
+}
+
+.terminal-commands pre{
+  font-size:1rem;
+  color:var(--primary-color);
+  white-space: pre-wrap;
+  padding-top:1rem;
+}
+
+.terminal-commands p{
+  color:var(--secondary-color);
+  padding-top:.7rem;
+}
+
+.terminal-commands b{
+  color:var(--primary-color);
+  padding-right: .5rem;
+
+}
 /* ----terminal end ------  */
