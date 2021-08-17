@@ -19,6 +19,20 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--body-bg);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--primary-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
 /* ---- navbar start -----  */
 
 .header {
