@@ -93,8 +93,8 @@ a {
 }
 
 .terminal-header svg {
-  width: 25px;
-  height: 23px;
+  width: 2rem;
+  height: 2rem;
 }
 .terminal-header path {
   fill: var(--primary-color);
