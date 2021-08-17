@@ -63,18 +63,19 @@ a {
   /* background-color: var(--body-bg); */
   display: flex;
   justify-content: center;
+  font-family: var(--primary-font);
 }
 
 .terminal {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  min-width: 500px;
-  height: 65%;
+  width: 95%;
+  max-width: 800px;
+  height: max-content;
   border-radius: 0.8rem 0.8rem 0 0;
   background-color: var(--terminal-bg);
   color: var(--secondary-color);
-  font-size: 1.35rem;
+  font-size: var(--terminal-font-size);
   padding-bottom: 5rem;
 }
 
@@ -84,7 +85,6 @@ a {
   align-items: center;
   padding: 0.7rem 1.2rem;
   border-bottom: 3px solid #5c4747;
-  font-size: 1rem;
 }
 
 .terminal-header p {
@@ -112,7 +112,7 @@ a {
 }
 
 .terminal-commands pre {
-  font-size: 1rem;
+  font-size: var(--output-font-size);
   color: var(--primary-color);
   white-space: pre-wrap;
   padding-top: 1rem;
