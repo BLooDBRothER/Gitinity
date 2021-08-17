@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,6 +10,7 @@ body {
   background: url(./Assets/bg_sphere.jpg);
   background-repeat: no-repeat;
   background-size: contain;
+  overflow-x:hidden;
 }
 
 a {
@@ -20,6 +19,7 @@ a {
 }
 
 /* scroll bar */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -40,7 +40,7 @@ a {
 /* ---- navbar start -----  */
 
 .header {
-  height: 200px;
+  height: 100px;
   padding: 1rem;
   color: var(--primary-color);
   font-family: var(--primary-font);
@@ -76,7 +76,7 @@ a {
 /* ----terminal start ------  */
 
 #terminal-wrapper {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 100px);
   display: flex;
   justify-content: center;
   font-family: var(--primary-font);
@@ -84,15 +84,18 @@ a {
 
 .terminal {
   width: 95%;
-  max-width: 800px;
+  max-width: 1000px;
+  max-height: 785px;
   height: max-content;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
   border-radius: 0.8rem 0.8rem 0 0;
   background-color: var(--terminal-bg);
   color: var(--secondary-color);
   font-size: var(--terminal-font-size);
+  margin: 1.5rem 0 2rem;
+  overflow-y: auto;
 }
 
 .terminal-header {
@@ -134,6 +137,10 @@ a {
   color: var(--primary-color);
   white-space: pre-wrap;
   padding-top: 1rem;
+}
+
+.terminal-commands pre p {
+  color: lime;
 }
 
 .terminal-commands p {
@@ -182,6 +189,7 @@ a {
   width: 25px;
   height: 30px;
 }
+
 .search-bar path {
   fill: #a09393;
 }
@@ -204,6 +212,7 @@ a {
 /* ----search bar end ------  */
 
 /* ----content area start */
+
 .content {
   height: 100%;
   display: grid;
@@ -220,9 +229,7 @@ a {
   background-color: var(--terminal-bg);
 }
 
-.content__data--5,
-.content__data--6,
-.content__data--7 {
+.content__data--5, .content__data--6, .content__data--7 {
   align-self: center;
 }
 
