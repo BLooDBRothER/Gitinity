@@ -10,4 +10,5 @@
   --terminal-bg: #443f3f;
   --primary-font: "Ubuntu Mono", monospace;
   --secondary-font: "Ubuntu", sans-serif;
+  --nav-font-size: clamp(1rem, 5vw, 2rem);
 }
