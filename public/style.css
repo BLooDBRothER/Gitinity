@@ -19,16 +19,20 @@ a {
   text-decoration: none;
 }
 
+/* scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--body-bg);
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 50px;
   background: var(--primary-color);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
@@ -108,6 +112,7 @@ a {
   width: 2rem;
   height: 2rem;
 }
+
 .terminal-header path {
   fill: var(--primary-color);
 }
@@ -115,6 +120,7 @@ a {
 .terminal-header svg:first-child path:last-child {
   fill: var(--secondary-color);
 }
+
 .terminal-main {
   padding: 0 1.5rem;
 }
@@ -139,6 +145,7 @@ a {
   color: var(--primary-color);
   padding-right: 0.5rem;
 }
+
 /* ----terminal end ------  */
 
 #second-100vh {
