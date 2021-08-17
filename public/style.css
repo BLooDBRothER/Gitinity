@@ -86,8 +86,7 @@ a {
 .terminal {
   width: 95%;
   max-width: 950px;
-  max-height: 750px;
-  height: max-content;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
   border-radius: 0.8rem 0.8rem 0 0;
@@ -262,6 +261,7 @@ a {
   height: 10rem;
   border-radius: 50%;
   background-color: var(--terminal-bg);
+  box-shadow: 12px 0px 2px var(--primary-color);
 }
 
 .content__data--5, .content__data--6, .content__data--7 {
