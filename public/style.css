@@ -202,3 +202,32 @@ a {
 }
 
 /* ----search bar end ------  */
+
+/* ----content area start */
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: end;
+}
+
+.content__data {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: var(--terminal-bg);
+}
+
+.content__data--5,
+.content__data--6,
+.content__data--7 {
+  align-self: center;
+}
+
+.content__data--5 {
+  grid-column: 2/3;
+}
+
+/* ----content area end */
