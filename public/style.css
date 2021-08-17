@@ -154,8 +154,8 @@ a {
   border: 2px solid var(--primary-color);
   border-radius: 0.4rem;
   height: 50px;
-  width: 35%;
-  min-width: 420px;
+  width: 95%;
+  max-width: 420px;
   background-color: var(--terminal-bg);
 }
 
