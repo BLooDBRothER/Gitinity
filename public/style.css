@@ -9,9 +9,6 @@
 body {
   min-height: 100vh;
   width: 100%;
-  background: url(./Assets/bg_sphere.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 a {
@@ -25,7 +22,7 @@ a {
   height: 200px;
   padding: 1rem;
   color:var(--secondary-color);
-  /* background-color: var(--body-bg); */
+  background-color: var(--body-bg);
 }
 
 .header__nav {
@@ -49,7 +46,7 @@ a {
 
 #terminal-wrapper{
   height: calc(100vh - 200px);
-  /* background-color: var(--body-bg); */
+  background-color: var(--body-bg);
   display:flex;
   justify-content: center;
 }
@@ -127,14 +124,11 @@ a {
 /* ----search bar start ------  */
 
 .search-bar-div{
-  position:absolute;
-  top:100vh;
-  left:0;
   display: flex;
   justify-content: center;
   width: 100%;
-  padding:2rem 1rem;
-  margin-top:3rem;
+  padding:5rem 1rem 2rem;
+
 }
 
 .search-bar{
@@ -153,6 +147,7 @@ a {
   width:25px;
   height:30px;
 }
+
 .search-bar path{
   fill:#a09393;
 }
@@ -168,9 +163,10 @@ a {
   color:#a09393;
 }
 
-
 .search-bar input:focus{
   outline:none;
 }
 
 /* ----search bar end ------  */
+
+
