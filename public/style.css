@@ -1,17 +1,17 @@
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+html{
+  background-color: var(--body-bg);
+}
+
 body {
   min-height: 100vh;
   width: 100%;
-  background: url(./Assets/bg_sphere.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  overflow-x:hidden;
 }
 
 a {
@@ -19,16 +19,21 @@ a {
   text-decoration: none;
 }
 
+/* scroll bar */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--body-bg);
 }
+
 ::-webkit-scrollbar-thumb {
   border-radius: 50px;
   background: var(--primary-color);
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
@@ -36,7 +41,7 @@ a {
 /* ---- navbar start -----  */
 
 .header {
-  height: 200px;
+  height: 125px;
   padding: 1rem;
   color: var(--primary-color);
   font-family: var(--primary-font);
@@ -58,7 +63,6 @@ a {
 }
 
 .header__icon {
-  /* font-size: 3rem; */
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -73,24 +77,23 @@ a {
 /* ----terminal start ------  */
 
 #terminal-wrapper {
-  height: calc(100vh - 200px);
-  /* background-color: var(--body-bg); */
+  height: calc(100vh - 125px);
   display: flex;
   justify-content: center;
   font-family: var(--primary-font);
 }
 
 .terminal {
+  width: 95%;
+  max-width: 950px;
+  max-height: 600px;
   display: flex;
   flex-direction: column;
-  width: 95%;
-  max-width: 800px;
-  height: max-content;
   border-radius: 0.8rem 0.8rem 0 0;
   background-color: var(--terminal-bg);
   color: var(--secondary-color);
   font-size: var(--terminal-font-size);
-  padding-bottom: 5rem;
+  margin: 1.5rem 0 2rem;
 }
 
 .terminal-header {
@@ -107,9 +110,10 @@ a {
 }
 
 .terminal-header svg {
-  width: 25px;
-  height: 23px;
+  width: 2rem;
+  height: 2rem;
 }
+
 .terminal-header path {
   fill: var(--primary-color);
 }
@@ -117,8 +121,10 @@ a {
 .terminal-header svg:first-child path:last-child {
   fill: var(--secondary-color);
 }
+
 .terminal-main {
   padding: 0 1.5rem;
+  overflow-y: auto;
 }
 
 .terminal-commands {
@@ -130,6 +136,10 @@ a {
   color: var(--primary-color);
   white-space: pre-wrap;
   padding-top: 1rem;
+}
+
+.terminal-commands pre p {
+  color: lime;
 }
 
 .terminal-commands p {
@@ -147,18 +157,54 @@ a {
   color: var(--primary-color);
   padding-right: 0.5rem;
 }
+
 /* ----terminal end ------  */
 
-#second-100vh {
+/* ----content container----*/
+.content-cnt{
   height: 100vh;
-  background-color: #222;
+  background: var(--gradient);
+  overflow: hidden;
+  position: relative;
+}
+
+.sphere-up1{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background: var(--sphere-up1-clr);
+  position: absolute;
+  top: 20%;
+  right: 300px;
+  z-index: -1;
+}
+
+.sphere-up2{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background: var(--sphere-up2-clr);
+  position: absolute;
+  top: 10%;
+  right: 150px;
+  z-index: -1;
+}
+
+.sphere-down{
+  height: 600px;
+  width: 600px;
+  border-radius: 50%;
+  background: var(--sphere-down-clr);
+  position: absolute;
+  top: 68%;
+  left: -200px;
+  z-index: -1;
 }
 
 /* ----search bar start ------  */
 
 .search-bar-div {
   position: absolute;
-  top: 100vh;
   left: 0;
   display: flex;
   justify-content: center;
@@ -175,7 +221,7 @@ a {
   border-radius: 0.4rem;
   height: 50px;
   width: 95%;
-  max-width: 420px;
+  max-width: 600px;
   background-color: var(--terminal-bg);
 }
 
@@ -183,19 +229,20 @@ a {
   width: 25px;
   height: 30px;
 }
-.search-bar path {
-  fill: #a09393;
+
+.search-bar path{
+  fill: var(--accent);
 }
 
 .search-bar input {
   height: 100%;
   margin: 0;
   flex-grow: 2;
-  background-color: transparent;
-  border: none;
-  padding-left: 0.8rem;
-  font-size: 1.3rem;
-  color: #a09393;
+  background-color:transparent;
+  border:none;
+  padding-left:.8rem;
+  font-size:1.3rem;
+  color: var(--accent);
 }
 
 .search-bar input:focus {
@@ -206,4 +253,37 @@ a {
   display: none;
 }
 
+.greener{
+  color: greenyellow;
+}
+
 /* ----search bar end ------  */
+
+/* ----content area start */
+
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: end;
+}
+
+.content__data {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: var(--terminal-bg);
+  box-shadow: 12px 0px 2px var(--primary-color);
+}
+
+.content__data--5, .content__data--6, .content__data--7 {
+  align-self: center;
+}
+
+.content__data--5 {
+  grid-column: 2/3;
+}
+
+/* ----content area end */

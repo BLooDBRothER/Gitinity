@@ -55,7 +55,7 @@ function timeCalc(data,i){
 }
 
 let prevTime=60;
-
+const terminal=document.querySelector('.terminal-main');
 terminal_command_divs.forEach((data,index)=>{
     if(index===0){
         setTimeout(()=>{
@@ -66,10 +66,10 @@ terminal_command_divs.forEach((data,index)=>{
     }
     else{
         prevTime+=timeCalc(terminal_command_divs[index-1],index);
-        console.log(prevTime)
         setTimeout(()=>{
             data.classList.remove('none');
             typerDriver(data);
+            console.log(terminal);
         },prevTime);      
     }
 })
