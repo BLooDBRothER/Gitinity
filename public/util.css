@@ -7,6 +7,7 @@
   --secondary-color: #fff;
   --accent: #00E0FF;
   --terminal-bg: #443f3f;
+  --terminal-header-border: #5c4747;
 
   /* Content page design color*/
   --gradient: linear-gradient(45deg, rgba(18,20,32,0.05) 35%, rgba(102,34,30,0.15) 75%, rgba(239,57,26,0.2) 100%);
