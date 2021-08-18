@@ -137,6 +137,12 @@ a {
   padding-top: 0.7rem;
 }
 
+.terminal-commands p::before{
+  content: '$';
+  padding-right: 0.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+}
 .terminal-commands b {
   color: var(--primary-color);
   padding-right: 0.5rem;
@@ -194,6 +200,10 @@ a {
 
 .search-bar input:focus {
   outline: none;
+}
+
+.none{
+  display: none;
 }
 
 /* ----search bar end ------  */
