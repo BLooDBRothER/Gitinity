@@ -83,5 +83,5 @@ terminal_command_divs.forEach((data, index) => {
 displayTime();
 
 function scrollTerminalMain() {
-    terminal.scrollTop = terminal.clientHeight;
+  terminal.scrollTop = terminal.clientHeight;
 }
