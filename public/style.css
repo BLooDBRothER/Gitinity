@@ -255,6 +255,9 @@ a {
     font-weight: bold;
     /* animation: blinker 0.5s ease infinite; */
 }
+.new-file p::before{
+    content: '';
+}
 @keyframes blinker{
     0%{
         opacity: 0;
