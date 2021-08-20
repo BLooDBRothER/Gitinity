@@ -91,3 +91,4 @@ displayTime();
 function scrollTerminalMain() {
   terminal.scrollTop = terminal.clientHeight;
 }
+

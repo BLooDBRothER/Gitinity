@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+:root{
+  --glow-height: 950px;
+}
+
 html {
     background-color: var(--body-bg);
 }
@@ -38,7 +42,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+  background: var(--contrast);
 }
 
 
@@ -99,27 +103,88 @@ a {
 }
 
 .terminal-main::-webkit-scrollbar-thumb:hover {
-    background: var(--secondary-color);
+  background: var(--contrast);
 }
 
 #terminal-wrapper {
-    height: calc(100vh - 125px);
-    display: flex;
-    justify-content: center;
-    font-family: var(--primary-font);
+  height: calc(100vh - 125px);
+  display: flex;
+  justify-content: center;
+  font-family: var(--primary-font);
+  margin-top: 3rem;
+}
+
+.glow-sphere{
+  position: absolute;
+  border-radius: 50%;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: 95%;
+  max-width: 950px;
+  max-height: 600px;
+  height: 85%;
+  z-index: -1;
+  opacity: .2;
+  box-shadow: 0px 0px 150px 100px var(--accent);
+}
+
+.bg-grid{
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bg-cont-grid{
+  top: 50%;
+  transform: translateY(-50%);
+  width:  clamp(250px, 32vw, 700px);
+  height: clamp(250px, 32vw, 700px);
+}
+
+.bg-grid-right{
+  right: 0px;
+}
+
+.bg-grid-left{
+  left: 0px;
+}
+
+.bg-grid-down{
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bg-fade-grid{
+  width: clamp(80px, 30vw, 400px);
+  height: clamp(80px, 30vw, 400px);
+}
+
+.bg-fade-left{
+  top: 70%;
+  left: 200px;
+  transform: translateY(-50%);
+}
+
+.bg-fade-right{
+  top: 60%;
+  right: 240px;
+  transform: translateY(-50%);
 }
 
 .terminal {
-    width: 95%;
-    max-width: 950px;
-    max-height: 600px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 0.8rem 0.8rem 0 0;
-    background-color: var(--terminal-bg);
-    color: var(--secondary-color);
-    font-size: var(--terminal-font-size);
-    margin: 1.5rem 0 2rem;
+  width: 95%;
+  max-width: 950px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-color: var(--terminal-bg);
+  color: var(--contrast);
+  font-size: var(--terminal-font-size);
+  margin: 1.5rem 0 2rem;
+  position: relative;
 }
 
 .terminal-header {
@@ -145,7 +210,7 @@ a {
 }
 
 .terminal-header svg:first-child path:last-child {
-    fill: var(--secondary-color);
+  fill: var(--contrast);
 }
 
 .terminal-main {
@@ -164,13 +229,13 @@ a {
     padding-top: 1rem;
 }
 
-.terminal-commands .greener {
-    color: lime;
+.terminal-commands .new-file {
+  color: var(--new-file);
 }
 
 .terminal-commands p {
-    color: var(--secondary-color);
-    padding-top: 0.7rem;
+  color: var(--contrast);
+  padding-top: 0.7rem;
 }
 
 .terminal-commands p::before {
@@ -268,15 +333,15 @@ a {
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    padding: 0 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 0.4rem;
-    height: 50px;
-    width: 95%;
-    max-width: 600px;
-    background-color: var(--terminal-bg);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.4rem;
+  height: 50px;
+  width: 95%;
+  max-width: 600px;
+  background-color: var(--secondary-color);
 }
 
 .search-bar svg {
@@ -338,24 +403,25 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: var(--terminal-bg);
+  background-color: var(--secondary-color);
   border: 12px solid transparent;
-  background: linear-gradient(var(--terminal-bg), var(--terminal-bg))
+  background: linear-gradient(var(--secondary-color), var(--secondary-color))
       padding-box,
-    linear-gradient(to bottom, var(--primary-color), var(--terminal-bg))
+    linear-gradient(to bottom, var(--primary-color), var(--secondary-color))
       border-box;
-  box-shadow: 5px 5px 0px var(--terminal-bg);
-  color: var(--secondary-color);
+  box-shadow: 5px 5px 0px var(--secondary-color);
+  color: var(--contrast);
   font-weight: bold;
   font-family: var(--primary-font);
   font-size: var(--output-font-size);
+  cursor: pointer;
 }
 
 .content__data--4,
 .content__data--7 {
   background: linear-gradient(var(--primary-color), var(--primary-color))
       padding-box,
-    linear-gradient(to bottom, var(--terminal-bg), var(--primary-color))
+    linear-gradient(to bottom, var(--secondary-color), var(--primary-color))
       border-box;
 }
 
