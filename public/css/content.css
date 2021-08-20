@@ -30,7 +30,42 @@
   font-size: var(--output-font-size);
   cursor: pointer;
 }
-
+.content__data:hover {
+  animation-name: border_rotate;
+  animation-duration: 0.5s;
+}
+@keyframes border_rotate {
+  0% {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color))
+      padding-box,
+    linear-gradient(to bottom, var(--primary-color), var(--secondary-color))
+      border-box;
+  }
+  25% {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color))
+      padding-box,
+    linear-gradient(to left, var(--primary-color), var(--secondary-color))
+      border-box;
+  }
+  50% {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color))
+      padding-box,
+    linear-gradient(to top, var(--primary-color), var(--secondary-color))
+      border-box;
+  }
+  75% {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color))
+      padding-box,
+    linear-gradient(to right, var(--primary-color), var(--secondary-color))
+      border-box;
+  }
+  100% {
+    background: linear-gradient(var(--secondary-color), var(--secondary-color))
+      padding-box,
+    linear-gradient(to bottom, var(--primary-color), var(--secondary-color))
+      border-box;
+  }
+}
 .content__data--4,
 .content__data--7 {
   background: linear-gradient(var(--primary-color), var(--primary-color))
