@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--body-bg);
+    overflow:hidden;
+}
+
+/* --- Documentation start --- */
+
+.documentation-wrapper{
+    color:var(--contrast);
+    margin:1rem;
+    font-size: 1.5rem;
+}
+
+.document-section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin:3rem 0;
+}
+
+.ind-topics{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:1rem;
+  width:95%;
+  max-width: 700px;
+}
+
+.ind-topics h1{
+    padding:1rem 0 3rem;
+    color:var(--primary-color);
+}
+
+.ind-topics p{
+  margin:1.2rem 0;
+  width: 100%;
+}
+
+.code-div{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--terminal-bg);
+  border-left:7px solid var(--primary-color);
+  border-radius:.3rem;
+  padding:0.7rem 1rem;
+  font-size:1.2rem;
+}
+
+.code-div svg{
+  width:30px;
+}
+
+.code-div svg path{
+  fill:var(--primary-color);
+}
+
+/* --- Documentation end --- */
+
+.sphere-up1 {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: var(--sphere-up1-clr);
+    position: absolute;
+    top: 20%;
+    right: 300px;
+    z-index: -1;
+}
+
+.sphere-up2 {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background: var(--sphere-up2-clr);
+    position: absolute;
+    top: 10%;
+    right: 150px;
+    z-index: -1;
+}
+
+.sphere-down {
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background: var(--sphere-down-clr);
+    position: absolute;
+    top: 68%;
+    left: -200px;
+    z-index: -1;
+}
