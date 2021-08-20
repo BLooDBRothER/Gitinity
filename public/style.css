@@ -51,14 +51,12 @@ a {
 }
 
 .themes{
-  position: absolute;
+  position: fixed;
   max-width: 300px;
   width: 30%;
   height: 80%;
   top: 100px;
-  left: 20px;
-  /* transform: translateX(-50%); */
-  /* background-color: var(--secondary-color); */
+  left: 0;
   z-index: 10;
   display: flex;
   flex-direction: column;
@@ -70,10 +68,7 @@ a {
   background-color: var(--body-bg);
   color: var(--primary-color);
   padding: .8rem 2rem;
-  border: 2px solid transparent;
-  /* border-radius: 1rem; */
-  /* margin: 0 2rem; */
-  text-align: center;
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
