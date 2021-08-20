@@ -17,14 +17,14 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: var(--terminal-bg);
+  background-color: var(--secondary-color);
   border: 12px solid transparent;
-  background: linear-gradient(var(--terminal-bg), var(--terminal-bg))
+  background: linear-gradient(var(--secondary-color), var(--secondary-color))
       padding-box,
-    linear-gradient(to bottom, var(--primary-color), var(--terminal-bg))
+    linear-gradient(to bottom, var(--primary-color), var(--secondary-color))
       border-box;
-  box-shadow: 5px 5px 0px var(--terminal-bg);
-  color: var(--secondary-color);
+  box-shadow: 5px 5px 0px var(--secondary-color);
+  color: var(--contrast);
   font-weight: bold;
   font-family: var(--primary-font);
   font-size: var(--output-font-size);
@@ -35,7 +35,7 @@
 .content__data--7 {
   background: linear-gradient(var(--primary-color), var(--primary-color))
       padding-box,
-    linear-gradient(to bottom, var(--terminal-bg), var(--primary-color))
+    linear-gradient(to bottom, var(--secondary-color), var(--primary-color))
       border-box;
 }
 .content__data--2::before,
@@ -233,9 +233,9 @@
   }
   .content__data--4,
   .content__data--7 {
-    background: linear-gradient(var(--terminal-bg), var(--terminal-bg))
+    background: linear-gradient(var(--secondary-color), var(--secondary-color))
         padding-box,
-      linear-gradient(to bottom, var(--primary-color), var(--terminal-bg))
+      linear-gradient(to bottom, var(--primary-color), var(--secondary-color))
         border-box;
   }
 }
