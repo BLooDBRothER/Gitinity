@@ -186,13 +186,28 @@ a {
 }
 
 .terminal-commands p::after {
-    content: '|';
+    content: attr(data-after);
     font-weight: bold;
+    /* animation: blinker 0.5s ease infinite; */
 }
-
+@keyframes blinker{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.blinker::after{
+    animation: blinker 0.5s ease infinite;
+}
 .terminal-commands pre::after {
     content: attr(data-after);
     font-weight: bold;
+    /* animation: blinker 0.5s ease infinite; */
 }
 /* ----terminal end ------  */
 
@@ -317,7 +332,49 @@ a {
     border-radius: 50%;
     background-color: var(--terminal-bg);
     box-shadow: 12px 0px 2px var(--primary-color);
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--terminal-bg);
+  border: 12px solid transparent;
+  background: linear-gradient(var(--terminal-bg), var(--terminal-bg))
+      padding-box,
+    linear-gradient(to bottom, var(--primary-color), var(--terminal-bg))
+      border-box;
+  box-shadow: 5px 5px 0px var(--terminal-bg);
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-family: var(--primary-font);
+  font-size: var(--output-font-size);
 }
+
+.content__data--4,
+.content__data--7 {
+  background: linear-gradient(var(--primary-color), var(--primary-color))
+      padding-box,
+    linear-gradient(to bottom, var(--terminal-bg), var(--primary-color))
+      border-box;
+}
+
+/* .content__data--4::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 86.6px 50px 0;
+  border-color: transparent orange transparent transparent;
+}
+
+.content__data--4::after {
+  content: "";
+  width: 200px;
+  height: 80px;
+  background: orange;
+} */
 
 .content__data--5,
 .content__data--6,
