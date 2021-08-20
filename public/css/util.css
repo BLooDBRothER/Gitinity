@@ -25,3 +25,22 @@
   --terminal-font-size: clamp(1rem, 5vw, 1.5rem);
   --output-font-size: clamp(1rem, 5vw, 1.25rem);
 }
+
+/* scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--body-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background: var(--primary-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--contrast);
+}

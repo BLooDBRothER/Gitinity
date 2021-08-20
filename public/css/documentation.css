@@ -25,20 +25,34 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  position: fixed;
   font-family: var(--secondary-font);
-  padding: 1rem;
+  padding: 2rem 0rem;
   background: var(--sphere-up2-clr);
+}
+
+.company {
+  display: flex;
+  padding: 1rem 1rem 2rem;
+  align-self: center;
+}
+.company__link {
+  text-decoration: none;
+  color: var(--contrast);
+}
+.company > a{
+  padding-right: 0.5rem;
 }
 
 .content__data {
   text-decoration: none;
   color: var(--primary-color);
-  padding: 1rem;
+  padding: 1rem 3rem;
   transition: 0.5s ease;
 }
 .content__data:hover {
   color: white;
-  padding-left: 2rem;
+  padding-left: 4rem;
   transition: 0.5s ease;
 }
 
@@ -48,6 +62,7 @@ body{
   flex-direction: column;
   align-items: center;
   margin:3rem 0;
+  padding-left: 250px;
 }
 
 .ind-topics{
@@ -102,6 +117,7 @@ body{
     top: 20%;
     right: 300px;
     z-index: -1;
+    position: fixed;
 }
 
 .sphere-up2 {
@@ -113,6 +129,7 @@ body{
     top: 10%;
     right: 150px;
     z-index: -1;
+    /* position: fixed; */
 }
 
 .sphere-down {
@@ -124,4 +141,5 @@ body{
     top: 68%;
     left: -200px;
     z-index: -1;
+    /* position: fixed; */
 }
