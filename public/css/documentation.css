@@ -38,6 +38,8 @@ body{
 .ind-topics h1{
     padding:1rem 0 3rem;
     color:var(--primary-color);
+    font: var(--secondary-font);
+    font-size:2rem;
 }
 
 .ind-topics p{
