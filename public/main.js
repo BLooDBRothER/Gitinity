@@ -17,9 +17,8 @@ function sleep(fun, time) {
   setTimeout(fun, time);
 }
 function typer(currText, tag) {
-  let index = 0;
   let str = "";
-  let timeCount = 0;
+  tag.setAttribute('data-after','|')
   for (let i = 0; i < currText.length; i++) {
     setTimeout(() => {
       str += currText[i];
@@ -27,6 +26,9 @@ function typer(currText, tag) {
       scrollTerminalMain();
     }, 60 * (i + 1));
   }
+  setTimeout(()=>{
+    tag.setAttribute('data-after','');
+  },60*currText.length);
 }
 
 let prevLength = 100;
@@ -46,7 +48,7 @@ function typerDriver(data) {
       textD.innerHTML = "";
       setTimeout(() => {
         typer(text, textD);
-      }, (idx + 1) * 400);
+      }, (idx + 1) * 300);
     }
   });
 }
@@ -54,10 +56,10 @@ function typerDriver(data) {
 const terminal_command_divs = document.querySelectorAll(".terminal-commands");
 
 function timeCalc(data, i) {
-  let time = 60;
+  let time = 0;
   const tags = [data.querySelector("p"), data.querySelector("pre")];
   tags.forEach((txt, idx) => {
-    if (txt) time += txt.textContent.length * 70;
+    if (txt) time += txt.textContent.length * 61.5;
   });
   return time;
 }
@@ -69,20 +71,24 @@ terminal_command_divs.forEach((data, index) => {
     setTimeout(() => {
       data.classList.remove("none");
       typerDriver(data);
-    }, 60);
-    prevTime = 60;
+    }, 40);
+    prevTime = 40;
   } else {
     prevTime += timeCalc(terminal_command_divs[index - 1], index);
     setTimeout(() => {
       data.classList.remove("none");
       typerDriver(data);
-      console.log(terminal);
     }, prevTime);
   }
 });
+setTimeout(()=>{
+  terminal_command_divs[terminal_command_divs.length-1].querySelector('p').setAttribute('data-after','|');
+  terminal_command_divs[terminal_command_divs.length-1].querySelector('p').classList.add('blinker');
+},prevTime+1500);
+
 displayTime();
 
 function scrollTerminalMain() {
-    terminal.scrollTop = terminal.clientHeight;
+  terminal.scrollTop = terminal.clientHeight;
 }
 
