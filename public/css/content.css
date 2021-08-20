@@ -38,7 +38,7 @@
   0% {
     background: linear-gradient(var(--secondary-color), var(--secondary-color))
       padding-box,
-    linear-gradient(to bottom, var(--primary-color), var(--secondary-color))
+    linear-gradient(to 0deg, var(--primary-color), var(--secondary-color))
       border-box;
   }
   25% {

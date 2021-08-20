@@ -8,18 +8,42 @@
 
 body{
     background-color: var(--body-bg);
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 /* --- Documentation start --- */
 
 .documentation-wrapper{
+  display: flex;
     color:var(--contrast);
-    margin:1rem;
+    /* margin:1rem; */
     font-size: 1.5rem;
 }
 
+.side_nav {
+  min-width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--secondary-font);
+  padding: 1rem;
+  background: var(--sphere-up2-clr);
+}
+
+.content__data {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding: 1rem;
+  transition: 0.5s ease;
+}
+.content__data:hover {
+  color: white;
+  padding-left: 2rem;
+  transition: 0.5s ease;
+}
+
 .document-section{
+  width: 100%;
   display:flex;
   flex-direction: column;
   align-items: center;
