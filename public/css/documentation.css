@@ -32,7 +32,7 @@ body{
   align-self: flex-end;
 }
 .fa-chevron-circle-down {
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 .fa-chevron-circle-down:hover {
   color: var(--primary-color);
