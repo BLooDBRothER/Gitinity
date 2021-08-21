@@ -13,7 +13,7 @@ body{
 
 /* ---side nav start ----  */
 .side_nav {
-  min-width: 250px;
+  max-width: 250px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,20 @@ body{
   padding: 2rem 0rem;
   background: var(--sphere-up2-clr);
 }
-
+.nav-toggle-button {
+  color: var(--contrast);
+  margin-left: calc(250px - 2rem);
+  position: fixed;
+  align-self: flex-end;
+}
+.fa-chevron-circle-down {
+  transform: rotate(90deg);
+  transition: 0.5s ease;
+}
+.fa-chevron-circle-down:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
 .company {
   display: flex;
   padding: 1rem 1rem 2rem;
@@ -32,8 +45,6 @@ body{
 .company__link {
   text-decoration: none;
   color: var(--contrast);
-}
-.company > a{
   padding-right: 0.5rem;
 }
 

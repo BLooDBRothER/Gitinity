@@ -25,26 +25,6 @@ a {
     text-decoration: none;
 }
 
-
-/* scroll bar */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--body-bg);
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 50px;
-    background: var(--primary-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--contrast);
-}
-
 /* ---- Theme Start ---- */
 .themes::-webkit-scrollbar {
   width: 1px;
