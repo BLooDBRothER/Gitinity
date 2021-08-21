@@ -22,6 +22,25 @@
   --sphere-down-clr: radial-gradient(circle, rgba(142,42,36,0.3) 0%, rgba(172,47,33,0.25) 30%, rgba(220,54,28,0.25) 70%, rgba(239,57,26,0.3) 100%);
   --sphere-up1-clr: radial-gradient(circle, rgba(239,57,26,0.1) 65%, rgba(239,57,26,0.2) 90%);
   --sphere-up2-clr: radial-gradient(circle, rgba(14, 14, 14, 0.5) 25%, rgba(0, 0, 0, 0.35) 90%);
+/* 
+  --body-bg: #18c6f1;
+  --primary-color: #ffb703;
+  --secondary-color: #023047;
+  --accent: #fb8500;
+  --contrast: #ef476f;
+
+  --glow-sphere: rgba(237, 246, 249, 0.7);
+  --continuous-grid: black;
+  --faded-grid: black;
+
+  --terminal-bg: #023047;
+  --terminal-header-border: #ffb703;
+  --new-file: #dc2f02;
+
+  --gradient: linear-gradient(45deg, rgba(255, 218, 0, 0.1) 35%, rgba(255, 218, 0, 0.15) 75%, rgba(255, 218, 0, 0.2) 100%);
+  --sphere-down-clr: radial-gradient(circle, rgba(255,218,0,0.5) 0%, rgba(255,221,0,0.5634628851540616) 33%, rgba(255,224,0,0.39539565826330536) 74%, rgba(255,226,0,0.4738270308123249) 100%);
+  --sphere-up1-clr: radial-gradient(circle, rgba(239, 71, 111, 0.1) 65%, rgba(239, 71, 111, 0.2) 90%);
+  --sphere-up2-clr: radial-gradient(circle, rgba(251, 133, 0, 0.5) 25%, rgba(251, 133, 0, 0.35) 90%); */
 
   /* font */
   --primary-font: "Ubuntu Mono", monospace;
