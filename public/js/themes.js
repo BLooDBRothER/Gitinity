@@ -3,7 +3,7 @@ const themes_cnt = document.querySelector(".themes");
 let selected = "",
   preveiousSelected = "";
 let themes_data;
-let path = "../../themes.json";
+let path = "../themes.json";
 
 let attribute = [
   "body-bg",
@@ -25,7 +25,7 @@ let attribute = [
 ];
 
 async function fetchTheme() {
-  let response = await fetch("../themes.json");
+  let response = await fetch("../../public/themes.json");
   let result = await response.json();
   themes_data = result.theme;
   themes_cnt.innerHTML = themes_data
