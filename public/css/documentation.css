@@ -8,7 +8,7 @@
 
 body{
     background-color: var(--body-bg);
-    /* overflow:hidden; */
+    font-family:  var(--primary-font);
 }
 
 /* --- Documentation start --- */
@@ -16,7 +16,6 @@ body{
 .documentation-wrapper{
   display: flex;
     color:var(--contrast);
-    /* margin:1rem; */
     font-size: 1.5rem;
 }
 
@@ -63,6 +62,24 @@ body{
   align-items: center;
   margin:3rem 0;
   padding-left: 250px;
+}
+
+.side-title{
+  position: fixed;
+  top:40%;
+  right:-125px;
+  transform:rotate(0.75turn);
+  font:1.5rem var(--secondary-font);
+  color:var(--contrast);
+  background-color: var(--terminal-bg);
+  padding:1rem 5rem 1rem;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 77% 0%, 21% 0%, 0 98%);
+  cursor:pointer;
+  transition:right .75s ease-in-out;
+}
+
+.side-title:hover,.side-title:focus-within{
+  right:-96px;
 }
 
 .ind-topics{
