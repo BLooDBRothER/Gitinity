@@ -82,7 +82,7 @@ body{
 .side-title{
   position: fixed;
   top:40%;
-  right: -96px;
+  right:-125px;
   transform:rotate(0.75turn);
   font:1.5rem var(--secondary-font);
   color:var(--contrast);
@@ -93,9 +93,9 @@ body{
   transition:right .75s ease-in-out;
 }
 
-/* .side-title:hover,.side-title:focus-within{
+.side-title:hover,.side-title:focus-within{
   right:-96px;
-} */
+}
 
 .ind-topics{
   display:flex;
@@ -174,8 +174,4 @@ body{
     left: -200px;
     z-index: -1;
     /* position: fixed; */
-}
-
-.toggle_side_title {
-  right : -125px;
 }
