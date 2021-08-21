@@ -13,7 +13,7 @@ body{
 
 /* ---side nav start ----  */
 .side_nav {
-  max-width: 250px;
+  width: 250px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,16 +22,17 @@ body{
   font-family: var(--secondary-font);
   padding: 2rem 0rem;
   background: var(--sphere-up2-clr);
+  left: 0;
+  transition: left .5s ease;
 }
-.nav-toggle-button {
+.nav-button {
   color: var(--contrast);
-  margin-left: calc(250px - 2rem);
+  margin-left: calc(250px - 3rem);
   position: fixed;
   align-self: flex-end;
 }
 .fa-chevron-circle-down {
   transform: rotate(90deg);
-  transition: 0.5s ease;
 }
 .fa-chevron-circle-down:hover {
   color: var(--primary-color);
@@ -77,6 +78,7 @@ body{
   align-items: center;
   margin:3rem 0;
   padding-left: 250px;
+  transition: padding-left .5s ease;
 }
 
 .side-title{
@@ -111,6 +113,7 @@ body{
     color:var(--primary-color);
     font: var(--secondary-font);
     font-size:2rem;
+    font-weight: bold;
 }
 
 .ind-topics p{
@@ -174,4 +177,15 @@ body{
     left: -200px;
     z-index: -1;
     /* position: fixed; */
+}
+
+
+.toggle_nav_button {
+  transform: rotate(-180deg) !important;
+}
+.toggle_nav {
+  left: -250px;
+}
+.document_section_toggle {
+  padding-left: unset;
 }
