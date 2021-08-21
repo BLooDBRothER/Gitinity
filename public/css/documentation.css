@@ -8,24 +8,17 @@
 
 body{
     background-color: var(--body-bg);
-    /* overflow:hidden; */
+    font-family:  var(--primary-font);
 }
 
-/* --- Documentation start --- */
-
-.documentation-wrapper{
-  display: flex;
-    color:var(--contrast);
-    /* margin:1rem; */
-    font-size: 1.5rem;
-}
-
+/* ---side nav start ----  */
 .side_nav {
   min-width: 250px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   position: fixed;
+  font-size: 1.5rem;
   font-family: var(--secondary-font);
   padding: 2rem 0rem;
   background: var(--sphere-up2-clr);
@@ -55,6 +48,16 @@ body{
   padding-left: 4rem;
   transition: 0.5s ease;
 }
+/* ---side nav end ----  */
+
+/* --- Documentation start --- */
+
+.documentation-wrapper{
+  display: flex;
+    color:var(--contrast);
+    font-size: 1.5rem;
+}
+
 
 .document-section{
   width: 100%;
@@ -63,6 +66,24 @@ body{
   align-items: center;
   margin:3rem 0;
   padding-left: 250px;
+}
+
+.side-title{
+  position: fixed;
+  top:40%;
+  right:-125px;
+  transform:rotate(0.75turn);
+  font:1.5rem var(--secondary-font);
+  color:var(--contrast);
+  background-color: var(--terminal-bg);
+  padding:1rem 5rem 1rem;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 77% 0%, 21% 0%, 0 98%);
+  cursor:pointer;
+  transition:right .75s ease-in-out;
+}
+
+.side-title:hover,.side-title:focus-within{
+  right:-96px;
 }
 
 .ind-topics{
