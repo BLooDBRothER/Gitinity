@@ -25,7 +25,7 @@ let attribute = [
 ];
 
 async function fetchTheme() {
-  let response = await fetch("../../public/themes.json");
+  let response = await fetch("../themes.json");
   let result = await response.json();
   themes_data = result.theme;
   themes_cnt.innerHTML = themes_data
