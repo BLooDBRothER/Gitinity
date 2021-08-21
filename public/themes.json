@@ -45,7 +45,7 @@
             "secondary-color": "#023047",
             "accent": "#b5e48c",
             "contrast": "#ef476f",
-            "glow-sphere": "ef47c533",
+            "glow-sphere": "#ef47c533",
             "continuous-grid": "white",
             "faded-grid": "white",
             "terminal-bg": "#090a0a",
