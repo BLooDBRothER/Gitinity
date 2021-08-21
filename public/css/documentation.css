@@ -11,6 +11,11 @@ body{
     font-family:  var(--primary-font);
 }
 
+body a{
+  color:inherit;
+  text-decoration: none;
+}
+
 /* ---side nav start ----  */
 .side_nav {
   width: 250px;
@@ -83,20 +88,29 @@ body{
 
 .side-title{
   position: fixed;
-  top:40%;
-  right:-125px;
+  top:35%;
+  right:-123px;
   transform:rotate(0.75turn);
   font:1.5rem var(--secondary-font);
   color:var(--contrast);
   background-color: var(--terminal-bg);
-  padding:1rem 5rem 1rem;
+  padding:1.5rem 5rem 1rem;
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 77% 0%, 21% 0%, 0 98%);
   cursor:pointer;
   transition:right .75s ease-in-out;
 }
 
-.side-title:hover,.side-title:focus-within{
-  right:-96px;
+#main-title{
+  top:60%;
+  width: 226.8px;
+}
+
+#main-title a:-webkit-any-link{
+  color:inherit;
+  
+}
+.side-title:hover,#main-title:hover{
+  right:-86px;
 }
 
 .ind-topics{
