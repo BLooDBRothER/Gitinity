@@ -7,6 +7,11 @@
   --accent: #00E0FF;
   --contrast: #FFF;
 
+  /* terminal bg design */
+  --glow-sphere: rgba(0, 225, 255, 0.2);
+  --continuous-grid: white;
+  --faded-grid: white;
+
   /* Terminal */
   --terminal-bg: #443f3f;
   --terminal-header-border: #5c4747;

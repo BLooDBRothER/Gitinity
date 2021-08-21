@@ -1,0 +1,39 @@
+{
+    "theme": [
+        {
+            "name": "default",
+            "body-bg": "#111111",
+            "primary-color": "#ef391a",
+            "secondary-color": "#443f3f",
+            "accent": "#00E0FF",
+            "contrast": "#FFF",
+            "glow-sphere": "rgba(0, 225, 255, 0.2)",
+            "continuous-grid": "white",
+            "faded-grid": "white",
+            "terminal-bg": "#443f3f",
+            "terminal-header-border": "#5c4747",
+            "new-file": "#lime",
+            "gradient": "linear-gradient(45deg, rgba(18,20,32,0.05) 35%, rgba(102,34,30,0.15) 75%, rgba(239,57,26,0.2) 100%);",
+            "sphere-down-clr": "radial-gradient(circle, rgba(142,42,36,0.3) 0%, rgba(172,47,33,0.25) 30%, rgba(220,54,28,0.25) 70%, rgba(239,57,26,0.3) 100%);",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(239,57,26,0.1) 65%, rgba(239,57,26,0.2) 90%);",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(14, 14, 14, 0.5) 25%, rgba(0, 0, 0, 0.35) 90%);"
+        },
+        {
+            "name": "light",
+            "body-bg": "#111111",
+            "primary-color": "#111111",
+            "secondary-color": "#111111",
+            "accent": "#111111",
+            "contrast": "#111111",
+            "terminal-bg": "#111111",
+            "terminal-header-border": "#111111",
+            "new-file": "#111111",
+            "gradient": "#111111",
+            "sphere-down-clr": "#111111",
+            "sphere-up1-clr": "#111111",
+            "sphere-up2-clr": "#111111",
+            "continuous-grid": "white",
+            "faded-grid": "white"
+        }
+    ]
+}
