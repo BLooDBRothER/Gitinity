@@ -253,7 +253,7 @@ a {
 
 .terminal-commands pre {
     font-size: var(--output-font-size);
-    color: var(--primary-color);
+    color: var(--terminal-text);
     white-space: pre-wrap;
     padding-top: 1rem;
 }
