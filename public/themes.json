@@ -14,10 +14,10 @@
             "terminal-text": "#ef391a",
             "terminal-header-border": "#5c4747",
             "new-file": "#lime",
-            "gradient": "linear-gradient(45deg, rgba(18,20,32,0.05) 35%, rgba(102,34,30,0.15) 75%, rgba(239,57,26,0.2) 100%);",
-            "sphere-down-clr": "radial-gradient(circle, rgba(142,42,36,0.3) 0%, rgba(172,47,33,0.25) 30%, rgba(220,54,28,0.25) 70%, rgba(239,57,26,0.3) 100%);",
-            "sphere-up1-clr": "radial-gradient(circle, rgba(239,57,26,0.1) 65%, rgba(239,57,26,0.2) 90%);",
-            "sphere-up2-clr": "radial-gradient(circle, rgba(14, 14, 14, 0.5) 25%, rgba(0, 0, 0, 0.35) 90%);"
+            "gradient": "linear-gradient(45deg, rgba(18,20,32,0.05) 35%, rgba(102,34,30,0.15) 75%, rgba(239,57,26,0.2) 100%)",
+            "sphere-down-clr": "radial-gradient(circle, rgba(142,42,36,0.3) 0%, rgba(172,47,33,0.25) 30%, rgba(220,54,28,0.25) 70%, rgba(239,57,26,0.3) 100%)",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(239,57,26,0.1) 65%, rgba(239,57,26,0.2) 90%)",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(14, 14, 14, 0.5) 25%, rgba(0, 0, 0, 0.35) 90%)"
         },
         {
             "name": "light-blue",
@@ -33,10 +33,10 @@
             "terminal-text": "#83c5be",
             "terminal-header-border": "#ffb703",
             "new-file": "#dc2f02",
-            "gradient": "linear-gradient(45deg, rgba(255, 218, 0, 0.1) 35%, rgba(255, 218, 0, 0.15) 75%, rgba(255, 218, 0, 0.2) 100%);",
-            "sphere-down-clr": "radial-gradient(circle, rgba(255,218,0,0.5) 0%, rgba(255,221,0,0.5634628851540616) 33%, rgba(255,224,0,0.39539565826330536) 74%, rgba(255,226,0,0.4738270308123249) 100%);",
-            "sphere-up1-clr": "radial-gradient(circle, rgba(239, 71, 111, 0.1) 65%, rgba(239, 71, 111, 0.2) 90%);",
-            "sphere-up2-clr": "radial-gradient(circle, rgba(251, 133, 0, 0.5) 25%, rgba(251, 133, 0, 0.35) 90%);"
+            "gradient": "linear-gradient(45deg, rgba(255, 218, 0, 0.1) 35%, rgba(255, 218, 0, 0.15) 75%, rgba(255, 218, 0, 0.2) 100%)",
+            "sphere-down-clr": "radial-gradient(circle, rgba(255,218,0,0.5) 0%, rgba(255,221,0,0.5634628851540616) 33%, rgba(255,224,0,0.39539565826330536) 74%, rgba(255,226,0,0.4738270308123249) 100%)",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(239, 71, 111, 0.1) 65%, rgba(239, 71, 111, 0.2) 90%)",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(251, 133, 0, 0.5) 25%, rgba(251, 133, 0, 0.35) 90%)"
         },
         {
             "name": "purple-space",
@@ -52,10 +52,10 @@
             "terminal-text": "#e5989b",
             "terminal-header-border": "#7209b7",
             "new-file": "#ffb703",
-            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%);",
-            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%);",
-            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%);",
-            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%);"
+            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%)",
+            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%)",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%)",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%)"
         },
         {
             "name": "matrix",
@@ -71,10 +71,10 @@
             "terminal-text": "#15ff00",
             "terminal-header-border": "#15ff00",
             "new-file": "#ffb703",
-            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%);",
-            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%);",
-            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%);",
-            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%);"
+            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%)",
+            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%)",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%)",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%)"
         },
         {
             "name": "vs code",
@@ -90,10 +90,10 @@
             "terminal-text": "#007acc",
             "terminal-header-border": "#007acc",
             "new-file": "#569cd6",
-            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%);",
-            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%);",
-            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%);",
-            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%);"
+            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%)",
+            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%)",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%)",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%)"
         },
         {
             "name": "mid-night",
@@ -109,10 +109,10 @@
             "terminal-text": "#708bc2",
             "terminal-header-border": "#708bc2",
             "new-file": "#569cd6",
-            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%);",
-            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%);",
-            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%);",
-            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%);"
+            "gradient": "linear-gradient(45deg, rgba(115, 9, 185,0.05) 35%, rgba(115, 9, 185,0.15) 75%, rgba(115, 9, 185,0.2) 100%)",
+            "sphere-down-clr": "radial-gradient(circle, rgba(135, 57, 207, 0.3) 0%, rgba(135, 57, 207,0.25) 30%, rgba(135, 57, 207,0.25) 70%, rgba(135, 57, 207,0.3) 100%)",
+            "sphere-up1-clr": "radial-gradient(circle, rgba(167, 66, 136, 0.1) 65%, rgba(0, 140, 255, 0.2) 90%)",
+            "sphere-up2-clr": "radial-gradient(circle, rgba(102, 49, 80, 0.5) 25%, rgba(99, 46, 78, 0.35) 90%)"
         }
 
     ]
