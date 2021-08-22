@@ -59,7 +59,7 @@ theme_btn.addEventListener("click", (e) => {
 });
 
 themes_cnt.addEventListener("click", (e) => {
-  if (e.target === themes_cnt) return;
+  if (e.target === themes_cnt || e.target.matches("img")) return;
 
   localStorage.setItem("theme", e.target.dataset.name);
   currTheme = e.target.dataset.name;
@@ -90,6 +90,12 @@ function updateThemeHover(){
     });
   });
 }
+
+window.addEventListener("click", (e)=>{
+  let parent = e.target.parentElement;
+  if(e.target.matches("img") || parent === themes_cnt || e.target === theme_btn)return ;
+  themes_cnt.classList.add("none");
+})
 
 window.onload = function () {
   localStorage.getItem("theme")
