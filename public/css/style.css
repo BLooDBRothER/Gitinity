@@ -33,7 +33,7 @@ a {
 .themes{
   position: fixed;
   max-width: 300px;
-  width: 30%;
+  width: 40%;
   max-height: 80%;
   top: 100px;
   left: 0;
@@ -44,12 +44,14 @@ a {
 }
 
 .themes__btn{
-  font-size: 2rem;
+  font-size: clamp(.8rem, 4vw, 2rem);
   background-color: var(--body-bg);
   color: var(--primary-color);
   padding: .8rem 2rem;
   border: 1px solid transparent;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .themes__btn:hover{
@@ -386,6 +388,14 @@ a {
 
 .greener p::before {
     display: none;
+}
+
+.selected__ic{
+  color: var(--accent);
+  margin: 0 auto;
+  flex: 1;
+  width: 20px;
+  height: 20px;
 }
 
 

@@ -4,6 +4,7 @@ let selected = "",
   preveiousSelected = "";
 let themes_data;
 let path = "../themes.json";
+let currTheme;
 
 let attribute = [
   "body-bg",
@@ -30,35 +31,69 @@ async function fetchTheme() {
   themes_data = result.theme;
   themes_cnt.innerHTML = themes_data
     .map((theme) => {
-      console.log(theme);
       return `<div class="themes__btn" data-name="${theme.name.toLowerCase()}">${
         theme.name
-      }</div>`;
+      }<img src="./Assets/Icons/check.svg" data-name="${theme.name.toLowerCase()}" alt="selected icon" class="selected__ic none"></div>`;
     })
     .join("");
+  updateTheme(currTheme);
+  updateThemeHover();
+  let currSelected = document.querySelector(`.themes__btn[data-name='${currTheme}']`);
+  document.querySelector(`img[data-name='${currTheme}']`).classList.remove("none");
+  currSelected.style.background = "var(--secondary-color)"
+  preveiousSelected = currSelected;
 }
-fetchTheme();
 
 function updateTheme(name) {
   themes_data.forEach((theme) => {
     if (theme.name !== name) return;
-    attribute.forEach(head => {
-        document.documentElement.style.setProperty(`--${head}`, theme[head]);
-    })
-  });
+    attribute.forEach((head) => {
+      document.documentElement.style.setProperty(`--${head}`, theme[head]);
+    });
+  });  
 }
 
 theme_btn.addEventListener("click", (e) => {
+  e.preventDefault();
   themes_cnt.classList.toggle("none");
 });
 
 themes_cnt.addEventListener("click", (e) => {
+  if (e.target === themes_cnt) return;
+
+  localStorage.setItem("theme", e.target.dataset.name);
+  currTheme = e.target.dataset.name;
   e.target.style.background = "var(--secondary-color)";
-  preveiousSelected && e.target !== preveiousSelected
-    ? (preveiousSelected.style.background = "var(--body-bg)")
-    : "";
+  document
+    .querySelector(`img[data-name="${e.target.dataset.name}"]`)
+    .classList.remove("none");
+
+  if (preveiousSelected && e.target !== preveiousSelected) {
+    preveiousSelected.style.background = "var(--body-bg)";
+    document
+      .querySelector(`img[data-name="${preveiousSelected.dataset.name}"]`)
+      .classList.add("none");
+  }
   updateTheme(e.target.dataset.name);
   preveiousSelected = e.target;
 });
 
-let template = `<div class="themes__btn" data-name="default">Default</div>`;
+themes_cnt.addEventListener("mouseleave", (e)=>{
+  updateTheme(currTheme);
+});
+
+function updateThemeHover(){
+  let themes_btn = document.querySelectorAll(".themes__btn");
+  themes_btn.forEach(each => {
+    each.addEventListener("mouseenter", function(e){
+      updateTheme(this.dataset.name);
+    });
+  });
+}
+
+window.onload = function () {
+  localStorage.getItem("theme")
+    ? (currTheme = localStorage.getItem("theme"))
+    : ((currTheme = "default"), localStorage.setItem("theme", "default"));
+  fetchTheme();
+};
