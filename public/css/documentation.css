@@ -68,7 +68,6 @@ body a{
 }
 .themes{
   position: fixed;
-  padding: 1rem;
   min-width: 200px;
   max-width: 300px;
   max-height: 80%;
@@ -85,8 +84,8 @@ body a{
 .themes__btn{
   font-size: clamp(.8rem, 4vw, 1rem);
   color: var(--primary-color);
-  padding: 1rem 0;
-  border: 1px solid transparent;
+  padding: 1rem;
+  border: 1px solid;
   cursor: pointer;
   display: flex;
   align-items: center;
