@@ -31,9 +31,13 @@ async function fetchTheme() {
   themes_data = result.theme;
   themes_cnt.innerHTML = themes_data
     .map((theme) => {
-      return `<div class="themes__btn" data-name="${theme.name.toLowerCase()}">${
-        theme.name
-      }<img src="./Assets/Icons/check.svg" data-name="${theme.name.toLowerCase()}" alt="selected icon" class="selected__ic none"></div>`;
+      if(window.location.pathname == "./public/Documentation/basics.html"){
+      }
+      else {
+        return `<div class="themes__btn" data-name="${theme.name.toLowerCase()}">${
+          theme.name
+        }<img src="../Assets/Icons/check.svg" data-name="${theme.name.toLowerCase()}" alt="selected icon" class="selected__ic none"></div>`;
+      }
     })
     .join("");
   updateTheme(currTheme);
