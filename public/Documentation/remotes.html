@@ -41,11 +41,10 @@
         <section class="document-section">
             <h1>REMOTES</h1>
             <div class="ind-topics">
-                <h1></h1>
-                <p></p>
+                <p>Create a copy of a remote Git repository.</p>
                 <div class="code-div">
-                    <code data-name=""></code>
-                    <svg data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                    <code data-name="git-clone">git clone &ltremote-path&gt</code>
+                    <svg data-name="git-clone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
                         aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>copy</title>
                         <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
@@ -61,6 +60,147 @@
                     </svg>
                 </div>
             </div>
+            <div class="ind-topics">
+                <p>List remote repositories.</p>
+                <div class="code-div">
+                    <code data-name="git-remote">git remote</code>
+                    <svg data-name="git-remote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Add a remote repository.</p>
+                <div class="code-div">
+                    <code data-name="git-remote-add">git remote add &ltremote-name&gt &ltremote-path&gt</code>
+                    <svg data-name="git-remote-add" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Download remote branch information, but do not merge anything.</p>
+                <div class="code-div">
+                    <code data-name="git-fetch-remote">git fetch &ltremote-name&gt</code>
+                    <svg data-name="git-fetch-remote" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Merge a remote branch into the checked-out branch.</p>
+                <div class="code-div">
+                    <code data-name="git-merge-remotes">git merge &ltremote-name&gt/&ltbranch-name&gt</code>
+                    <svg data-name="git-merge-remotes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>List remote branches.</p>
+                <div class="code-div">
+                    <code data-name="git-branch-r">git branch -r</code>
+                    <svg data-name="git-branch-r" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Push a local branch to another repository.</p>
+                <div class="code-div">
+                    <code data-name="git-push-repo">git push &ltremote-name&gt &ltbranch-name&gt</code>
+                    <svg data-name="git-push-repo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Push a tag to another repository.</p>
+                <div class="code-div">
+                    <code data-name="git-push-tag">git push &ltremote-name&gt &lttag-name&gt</code>
+                    <svg data-name="git-push-tag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+
         </section>
     </div>
 
