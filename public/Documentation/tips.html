@@ -40,12 +40,12 @@
     <div class="documentation-wrapper">
         <section class="document-section">
             <h1>TIPS</h1>
+
             <div class="ind-topics">
-                <h1></h1>
-                <p></p>
+                <p>Export a single snapshot to a ZIP archive called &lt;file&gt;</p>
                 <div class="code-div">
-                    <code data-name=""></code>
-                    <svg data-name="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                    <code data-name="archive">git archive master --format=zip --output=../website-12-10-2012.zip</code>
+                    <svg data-name="archive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
                         aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>copy</title>
                         <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
@@ -61,6 +61,373 @@
                     </svg>
                 </div>
             </div>
+            <div class="ind-topics">
+                <p>For Unix users</p>
+                <div class="code-div">
+                    <code data-name="archive-lnx">git archive master --format=tar --output=../website-12-10-2012.tar</code>
+                    <svg data-name="archive-lnx" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Export an entire branch, complete with history, to the specified file</p>
+                <div class="code-div">
+                    <code data-name="bundle">git bundle create &lt;file&gt; &lt;branch-name&gt;</code>
+                    <svg data-name="bundle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Re-create a project from a bundled repository and checkout &lt;branch‑name&gt;</p>
+                <div class="code-div">
+                    <code data-name="bundle-clone">git clone repo.bundle &lt;repo-dir&gt; -b &lt;branch-name&gt;</code>
+                    <svg data-name="bundle-clone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Temporarily stash changes to create a clean working directory</p>
+                <div class="code-div">
+                    <code data-name="stash">git stash</code>
+                    <svg data-name="stash" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Re-apply stashed changes to the working directory</p>
+                <div class="code-div">
+                    <code data-name="stash-apply">git stash apply</code>
+                    <svg data-name="stash-apply" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>View the difference between two commits</p>
+                <div class="code-div">
+                    <code data-name="diff-cid">git diff &lt;commit-id&gt;..&lt;commit-id&gt;</code>
+                    <svg data-name="diff-cid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>View the difference between the working directory and the staging area</p>
+                <div class="code-div">
+                    <code data-name="diff">git diff</code>
+                    <svg data-name="diff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>View the difference between the staging area and the most recent commit</p>
+                <div class="code-div">
+                    <code data-name="diff-cached">git diff --cached</code>
+                    <svg data-name="diff-cached" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Unstage a file, but don’t alter the working directory or move the current branch</p>
+                <div class="code-div">
+                    <code data-name="reset">git reset HEAD &lt;file&gt;</code>
+                    <svg data-name="reset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Revert an individual file to match the specified commit without switching
+                    branches</p>
+                <div class="code-div">
+                    <code data-name="checkout">git checkout &lt;commit-id&gt; &lt;file&gt;</code>
+                    <svg data-name="checkout" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Create a shortcut for a command and store it in the global configuration file</p>
+                <div class="code-div">
+                    <code data-name="config">git config --global alias.&lt;alias-name&gt; &lt;git-command&gt;&lt;git-command&gt;</code>
+                    <svg data-name="config" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            
+            <h1>PLUMBING</h1>
+            <div class="ind-topics">
+                <p>Display the specified object, where &lt;type&gt; is one of commit , tree , blob , or tag</p>
+                <div class="code-div">
+                    <code data-name="cat">git cat-file &lt;type&gt; &lt;object-id&gt;</code>
+                    <svg data-name="cat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Output the type of the specified object</p>
+                <div class="code-div">
+                    <code data-name="cat-file">git cat-file -t &lt;object-id&gt;</code>
+                    <svg data-name="cat-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Display a pretty version of the specified tree object</p>
+                <div class="code-div">
+                    <code data-name="ls">git ls-tree &lt;tree-id&gt;</code>
+                    <svg data-name="ls" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Perform a garbage collection on the object database</p>
+                <div class="code-div">
+                    <code data-name="gc">git gc</code>
+                    <svg data-name="gc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Stage the specified file, using the optional --add flag to denote a new untracked
+                    file</p>
+                <div class="code-div">
+                    <code data-name="update">git update-index [--add] &lt;file&gt;</code>
+                    <svg data-name="update" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Generate a tree from the index and store it in the object database. Returns the ID
+                    of the new tree object</p>
+                <div class="code-div">
+                    <code data-name="write">git write-tree</code>
+                    <svg data-name="write" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="ind-topics">
+                <p>Create a new commit object from the given tree object and parent commit.
+                    Returns the ID of the new commit object</p>
+                <div class="code-div">
+                    <code data-name="commit">git commit-tree &lt;tree-id&gt; -p &lt;parent-id&gt;</code>
+                    <svg data-name="commit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+                        aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>copy</title>
+                        <path data-name="layer2" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2"
+                            d="M20 14h-4v40h32V14h-4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M43.1 8H54a2 2 0 0 1 2 2v50a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h10.9"
+                            fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        <path data-name="layer1"
+                            d="M39 6h-2.1a5 5 0 0 0-9.8 0H25a4.7 4.7 0 0 0-5 5v3h24v-3a4.8 4.8 0 0 0-5-5z" fill="none"
+                            stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                    </svg>
+                </div>
+            </div>
+
         </section>
     </div>
 
