@@ -1,0 +1,37 @@
+.theme-creator {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+
+.toggle-bg {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+header button {
+  background-color: inherit;
+  color: inherit;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+  padding: 0.15rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem;
+  font-family: var(--primary-font);
+}
