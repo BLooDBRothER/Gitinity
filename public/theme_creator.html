@@ -30,39 +30,58 @@
         <input type="color" id="contrast" value="#ffffff" />Contrast Color
       </label>
       <label for="terminal-bg">
-        <input type="color" id="terminal-bg" value="#443f3f"/>Terminal Background
+        <input type="color" id="terminal-bg" value="#443f3f" />Terminal
+        Background
       </label>
       <label for="terminal-text">
-        <input type="color" id="terminal-text" value="#ef391a" />Terminal Text Color
-      </label>
-      <label for="terminal-header-border">
-        <input type="color" id="terminal-header-border" value="#5c4747" />Terminal Header Border
+        <input type="color" id="terminal-text" value="#ef391a" />Terminal Text
         Color
       </label>
+      <label for="terminal-header-border">
+        <input
+          type="color"
+          id="terminal-header-border"
+          value="#5c4747"
+        />Terminal Header Border Color
+      </label>
       <label for="new-file">
-        <input type="color" id="new-file" value="#00ffff" />Terminal New file Color
+        <input type="color" id="new-file" value="#00ffff" />Terminal New file
+        Color
       </label>
       <label for="glow-sphere">
         <input type="color" id="glow-sphere" value="#00e1ff" />Glowing sphere
       </label>
       <label for="continuous-grid">
-        <input type="color" id="continuous-grid" value="#ffffff"/>Continuous Grid
+        <input type="color" id="continuous-grid" value="#ffffff" />Continuous
+        Grid
       </label>
       <label for="faded-grid">
         <input type="color" id="faded-grid" />Faded Grid
       </label>
       <label for="gradient">
         <input type="color" id="gradient" />Gradient
+        <button data-id="gradient">Add gradient/rgba()</button>
       </label>
       <label for="sphere-down-clr">
         <input type="color" id="sphere-down-clr" />Sphere Down Color
+        <button data-id="sphere-down-clr">Add gradient/rgba()</button>
       </label>
       <label for="sphere-up1-clr">
         <input type="color" id="sphere-up1-clr" />Sphere Up 1 Color
+        <button data-id="sphere-up1-clr">Add gradient/rgba()</button>
       </label>
       <label for="sphere-up2-clr">
         <input type="color" id="sphere-up2-clr" />Sphere Up 2 Color
+        <button data-id="sphere-up2-clr">Add gradient/rgba()</button>
       </label>
+      <a href="https://cssgradient.io/" target="blank">Generate Gradient!</a>
+      <p>
+       Example Input: linear-gradient(45deg, rgba()
+        0%, rgba() 0%)
+      </p>
+      <button class="json">Generate JSON</button>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button class="copy">Copy</button>
     </section>
     <header class="header">
       <nav class="header__nav">
