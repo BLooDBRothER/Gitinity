@@ -76,12 +76,13 @@ button {
 .theme-creator .json,
 .theme-creator .copy {
   margin: 2rem;
-  margin-left: 0;
+  margin-left: 2rem;
 }
 
 .theme-creator textarea {
   outline: none;
   padding: 1rem;
+  margin-left: 2rem;
 }
 
 .none {
