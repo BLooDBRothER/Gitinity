@@ -1,12 +1,16 @@
-const themeCreator = document.querySelector(".theme-creator");
+const root = document.documentElement;
 const body = document.body;
+const themeCreator = document.querySelector(".theme-creator");
+const textarea = document.querySelector(".theme-creator textarea");
+const jsonButton = document.querySelector(".theme-creator .json");
+const copyButton = document.querySelector(".theme-creator .copy");
+const preview = document.querySelector(".header__preview");
+const otherColorFormatButtons = document.querySelectorAll("label button");
+const colorInputs = document.querySelectorAll("label input");
 
-themeCreator.style.height = `${document.body.offsetHeight}px`;
-function toggle() {
-  document.querySelectorAll("input").forEach((i) => {
-    let value = i.value;
-    value = value.replace(/;|background/gi, "");
-    document.documentElement.style.setProperty(`--${i.id}`, value);
+function togglePreview() {
+  colorInputs.forEach((input) => {
+    root.style.setProperty(`--${input.id}`, input.value);
   });
   themeCreator.classList.toggle("toggle-bg");
   document.querySelectorAll(".theme-creator *").forEach((child) => {
@@ -14,49 +18,50 @@ function toggle() {
   });
   body.classList.toggle("hide-overflow");
 }
-document.querySelector(".header__preview").addEventListener("click", toggle);
-
-document.querySelectorAll("label button").forEach((button) => {
-  button.addEventListener("click", function () {
-    let ip = document.querySelector(`#${this.dataset.id}`);
-    if (ip.type === "color") {
-      this.textContent = "Select Color";
-      ip.type = "text";
-      ip.value = "";
-      ip.focus();
-    } else {
-      this.textContent = "Add gradient/rgba()";
-      ip.type = "color";
-    }
-  });
-});
-
-document.querySelectorAll("input").forEach((i) => {
-  i.addEventListener("input", function () {
-    this.value = this.value.replace(/;|background|:/gi, "").trim();
-  });
-});
 
 function createJSON() {
   let value = {};
-  document.querySelectorAll("label input").forEach((i) => {
+  colorInputs.forEach((i) => {
     value[`--${i.id}`] = i.value;
   });
   return JSON.stringify(value);
 }
 
-document.querySelector(".json").addEventListener("click", function () {
-  textarea = document.querySelector("textarea");
+otherColorFormatButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    let input = document.querySelector(`#${this.dataset.id}`);
+    if (input.type === "color") {
+      this.textContent = "Select Color";
+      input.type = "text";
+      input.value = "";
+      input.focus();
+    } else {
+      this.textContent = "Add gradient/rgba()";
+      input.type = "color";
+    }
+  });
+});
+
+colorInputs.forEach((input) => {
+  input.addEventListener("input", function () {
+    this.value = this.value.replace(/;|background|:/gi, "").trim();
+  });
+});
+
+jsonButton.addEventListener("click", function () {
   textarea.value = "";
   textarea.value = createJSON();
 });
 
-document.querySelector(".copy").addEventListener("click", function () {
-  let copyText = document.querySelector("textarea");
-  copyText.select();
-  navigator.clipboard.writeText(copyText.value);
+copyButton.addEventListener("click", function () {
+  textarea.select();
+  navigator.clipboard.writeText(textarea.value);
   this.textContent = "Copied To Clipboard!";
   setTimeout(function () {
-    document.querySelector(".copy").textContent = "Copy";
+    copyButton.textContent = "Copy";
+    textarea.value = "";
   }, 3000);
 });
+
+preview.addEventListener("click", togglePreview);
+// themeCreator.style.height = `${document.body.offsetHeight}px`;

@@ -1,3 +1,7 @@
+.hide-overflow {
+  overflow: hidden;
+}
+
 .theme-creator {
   position: absolute;
   top: 0;
@@ -13,10 +17,6 @@
   align-items: start;
   padding: 5rem;
   overflow: auto;
-}
-
-.hide-overflow {
-  overflow: hidden;
 }
 
 .toggle-bg {
@@ -35,7 +35,7 @@ button {
   font-family: var(--primary-font);
 }
 
-label {
+.theme-creator label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,7 @@ label {
   border-radius: 10px;
 }
 
-label input[type="text"] {
+.theme-creator label input[type="text"] {
   outline: none;
   height: 2rem;
   width: 20rem;
@@ -73,13 +73,17 @@ label input[type="text"] {
   font-size: 1rem;
 }
 
-.json,
-.copy {
+.theme-creator .json,
+.theme-creator .copy {
   margin: 2rem;
   margin-left: 0;
 }
 
-textarea {
+.theme-creator textarea {
   outline: none;
   padding: 1rem;
+}
+
+.none {
+  display: none !important;
 }
