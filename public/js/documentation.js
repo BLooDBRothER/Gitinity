@@ -10,14 +10,15 @@ nav_toggler.addEventListener("click", function() {
 
 const copyIC = document.querySelectorAll(".code-div svg");
 
+let prevID;
 function copy(e){
+    clearTimeout(prevID)
     let copyStr = document.querySelector(`code[data-name="${this.dataset.name}"]`).innerText;
     navigator.clipboard.writeText(copyStr);
     let msg = document.querySelector(".copy-msg");
     msg.firstElementChild.innerText = copyStr;
-    msg.syle.top = `${document.querySelector("body").scrollHeight}px`;
     msg.style.right = "0";
-    setTimeout((e) => {
+    prevID = setTimeout((e) => {
         msg.style.right = "-100%";
     }, 2000);
 }
